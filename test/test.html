@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoApp</title>
+</head>
+<body>
+    <form onclick="AddTodo(event)">
+    <lable>Add+</lable><br/>
+    <input type="text" id="Todo"/><br/>
+    <input type="submit" value="Addtodo"/>
+    <input type="submit" value="DeleteTodo" onclick="Delete(event)"/><br/>
+    </form>
+
+    
+   
+</body>
+  <script>
+      function AddTodo(event){
+        event.preventDefualt();
+            if(AddTodo){
+             localStorage.getItem(document.getElementById([Add]))
+            }else{
+               return alert("requared todo")
+            }
+           
+      }
+
+      function Delete(event){
+        event.preventDefualt();
+        if(Delete){
+            localStorage.removeItem(document.getElementById([Delete]))
+        }else{
+            return alert("Delete Todo")
+        }
+       
+      }
+
+
+      
+
+      
+  </script>
+</html>
